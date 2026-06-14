@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dingir System Database</title>
+
+<style>
+body{
+    background:#0b0f0c;
+    color:#d8c27a;
+    font-family:Courier New, monospace;
+    margin:40px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    border:2px solid #d8c27a;
+    padding:20px;
+    background:#111811;
+}
+
+h1,h2,h3{
+    color:#f2d16b;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+th,td{
+    border:1px solid #555;
+    padding:8px;
+    text-align:left;
+}
+
+th{
+    background:#222;
+}
+
+a{
+    color:#9fdcff;
+    text-decoration:none;
+}
+
+.warning{
+    border:1px solid #ff5555;
+    color:#ff5555;
+    padding:10px;
+    margin:15px 0;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<p><a href="index.html">HOME</a></p>
+
+<h1>DINGIR SYSTEM DATABASE</h1>
+
+<div class="warning">
+IMPERIAL ACCESS LEVEL: AUTHORIZED PERSONNEL ONLY
+</div>
+
+<h2>World Profile</h2>
+
+<table>
+<tr><th>Name</th><td>Dingir</td></tr>
+<tr><th>UWP</th><td>AA89A98-F</td></tr>
+<tr><th>Population</th><td>10,000,000,000</td></tr>
+<tr><th>Government</th><td>Impersonal Bureaucracy</td></tr>
+<tr><th>Law Level</th><td>8</td></tr>
+<tr><th>Technology Level</th><td>15</td></tr>
+<tr><th>Hydrographics</th><td>85%</td></tr>
+<tr><th>Atmosphere</th><td>Dense Breathable</td></tr>
+<tr><th>Starport</th><td>Class A</td></tr>
+<tr><th>Role</th><td>Sector Capital</td></tr>
+</table>
+
+<h2>System Bodies</h2>
+
+<table>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+
+<tr>
+<td>Dingir</td>
+<td>Main World</td>
+<td>Sector capital and Imperial administrative center.</td>
+</tr>
+
+<tr>
+<td>Anu</td>
+<td>Large Gas Giant</td>
+<td>Five major moons.</td>
+</tr>
+
+<tr>
+<td>Enki</td>
+<td>Large Gas Giant</td>
+<td>Ring system.</td>
+</tr>
+
+<tr>
+<td>Tiamat</td>
+<td>Small Gas Giant</td>
+<td>Ring system.</td>
+</tr>
+
+<tr>
+<td>Abzu</td>
+<td>Large Gas Giant</td>
+<td>Outer system giant.</td>
+</tr>
+
+<tr>
+<td>Kishar</td>
+<td>Large Gas Giant</td>
+<td>Several inhabited moons.</td>
+</tr>
+</table>
+
+<h2>Notable Moons</h2>
+
+<ul>
+<li><b>Ninshar</b> — Balkanized moon with three rival governments.</li>
+<li><b>Enlil</b> — Colony world under external administration.</li>
+<li><b>Utu</b> — Frozen radioactive world containing traces of extinct natives.</li>
+<li><b>Namtar</b> — Corrosive storm world with extinct exotic life.</li>
+<li><b>Kurugal</b> — Massive frozen ocean world.</li>
+<li><b>Ereshkigal</b> — Frontier democratic settlement.</li>
+</ul>
+
+<h2>Current Investigations</h2>
+
+<ul>
+<li>The Missing AI Servant</li>
+<li>Potential AI Unrest</li>
+<li>Aristocratic Corruption</li>
+<li>Solomani Intelligence Activity</li>
+</ul>
+
+<p>
+END FILE // IMPERIAL DATA NET
+</p>
+
+</div>
+
+</body>
+</html>
