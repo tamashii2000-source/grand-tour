@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ata Saxena | Imperial Personnel Dossier</title>
+<style>
+:root{
+    --bg:#0b0f0c;
+    --panel:#111811;
+    --panel2:#172117;
+    --gold:#d8c27a;
+    --gold-bright:#f2d16b;
+    --green:#9fbf9f;
+    --line:#3f4a3f;
+    --text:#e6e0c8;
+    --muted:#b6ad86;
+}
+*{box-sizing:border-box;}
+body{
+    margin:0;
+    background:radial-gradient(circle at top, #162016 0%, var(--bg) 45%, #050705 100%);
+    color:var(--text);
+    font-family:"Courier New", Courier, monospace;
+    line-height:1.55;
+}
+a{color:var(--gold-bright); text-decoration:none;}
+a:hover{text-decoration:underline;}
+.container{
+    max-width:1100px;
+    margin:32px auto;
+    padding:24px;
+    border:2px solid var(--gold);
+    background:rgba(17,24,17,.96);
+    box-shadow:0 0 28px rgba(216,194,122,.15);
+}
+.header{
+    border-bottom:1px solid var(--line);
+    padding-bottom:18px;
+    margin-bottom:22px;
+}
+.kicker{
+    color:var(--muted);
+    letter-spacing:3px;
+    text-transform:uppercase;
+    font-size:.85rem;
+}
+h1,h2,h3{
+    color:var(--gold-bright);
+    letter-spacing:2px;
+    margin:0 0 12px;
+}
+h1{font-size:2.2rem;}
+h2{font-size:1.35rem; border-bottom:1px solid var(--line); padding-bottom:8px; margin-top:28px;}
+h3{font-size:1.05rem; margin-top:18px;}
+.nav{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px 14px;
+    margin-top:12px;
+    font-size:.95rem;
+}
+.profile{
+    display:grid;
+    grid-template-columns:1fr 360px;
+    gap:28px;
+    align-items:start;
+}
+.portrait{
+    width:100%;
+    border:1px solid var(--gold);
+    border-radius:12px;
+    background:#050705;
+    box-shadow:0 0 18px rgba(0,0,0,.45);
+}
+.id-card{
+    display:grid;
+    grid-template-columns:180px 1fr;
+    gap:6px 12px;
+    margin:18px 0 24px;
+    padding:16px;
+    border:1px solid var(--line);
+    background:var(--panel2);
+}
+.label{color:var(--gold); font-weight:bold;}
+.note{
+    border-left:4px solid var(--gold);
+    padding:12px 16px;
+    background:#0d140d;
+    color:var(--green);
+    margin:18px 0;
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin:14px 0 22px;
+    background:#0d140d;
+}
+th,td{
+    border:1px solid var(--line);
+    padding:8px 10px;
+    text-align:left;
+    vertical-align:top;
+}
+th{
+    color:#050705;
+    background:var(--gold-bright);
+    font-weight:bold;
+}
+.stat-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:22px;
+}
+ul{margin-top:8px;}
+li{margin:6px 0;}
+.empty{color:var(--muted); font-style:italic;}
+.footer{
+    margin-top:30px;
+    padding-top:14px;
+    border-top:1px solid var(--line);
+    color:var(--muted);
+    font-size:.9rem;
+}
+@media(max-width:800px){
+    .profile,.stat-grid{grid-template-columns:1fr;}
+    .id-card{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <div class="kicker">Imperial Ministry of State // Personnel Dossier</div>
+        <h1>Ata Saxena</h1>
+        <nav class="nav">
+            <a href="#stats">Stats</a>
+            <a href="#skills">Skills</a>
+            <a href="#armor">Armor</a>
+            <a href="#ranged-weapons">Ranged Weapons</a>
+            <a href="#melee-weapons">Melee Weapons</a>
+            <a href="#gear">Gear</a>
+            <a href="#background">Background</a>
+            <a href="#associations">Associations</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile">
+            <div>
+                <div class="id-card">
+                    <div class="label">Name</div><div>Ata Saxena</div>
+                    <div class="label">Age</div><div>43</div>
+                    <div class="label">Sex</div><div>M</div>
+                    <div class="label">Career / Occupation</div><div>Ex-Scout Astrogator</div>
+                    <div class="label">Race</div><div>Selenite</div>
+                </div>
+
+                <p>Typical of Selenites, Ata is tall, slender, and relatively frail. He spent four terms in the IISS working in the Courier branch. While most couriers tend to be somewhat unremarkable, Ata stands out due to being an expert astrogator.</p>
+
+                <div class="note">Selenites are particularly adept at Zero-G combat, gaining a +2 DM to all rolls involving zero-G maneuvering.</div>
+
+                <p>Ata has an ally in the IISS: Basilio Xavier, an administrator with access to high-ranking scouts and decision-makers. Xavier is pure Solomani and loyal to the Imperium. From his administrative role, Xavier can direct scout ships to support the mission of the <em>Amelia Grace</em>.</p>
+            </div>
+            <img class="portrait" src="ata_saxena_1_1.jpeg" alt="Portrait of Ata Saxena, a slender Selenite ex-scout astrogator aboard a starship." />
+        </section>
+
+        <section id="stats">
+            <h2>Stats</h2>
+            <div class="stat-grid">
+                <table>
+                    <thead>
+                        <tr><th>Char</th><th>Score</th><th>Modifier</th><th>Temp Score</th><th>Temp Mod</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>STR</td><td>5</td><td>-1</td><td>-</td><td>-</td></tr>
+                        <tr><td>DEX</td><td>10</td><td>+1</td><td>-</td><td>-</td></tr>
+                        <tr><td>END</td><td>5</td><td>-1</td><td>-</td><td>-</td></tr>
+                        <tr><td>INT</td><td>9</td><td>+1</td><td>-</td><td>-</td></tr>
+                        <tr><td>EDU</td><td>9</td><td>+1</td><td>-</td><td>-</td></tr>
+                        <tr><td>SOC</td><td>9</td><td>+1</td><td>-</td><td>-</td></tr>
+                        <tr><td>MRL</td><td>9</td><td>+1</td><td>-</td><td>-</td></tr>
+                        <tr><td>SAN</td><td>11</td><td>+1</td><td>-</td><td>-</td></tr>
+                    </tbody>
+                </table>
+
+                <div id="skills">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>Pilot (spacecraft) 1</li>
+                        <li>Survival 0</li>
+                        <li>Astrogation 3</li>
+                        <li>Gun Combat 0</li>
+                        <li>Mechanic 1</li>
+                        <li>Vacc Suit 2</li>
+                        <li>Flyer (Grav) 1</li>
+                        <li>Athletics (Dexterity) 1</li>
+                        <li>Diplomat 1</li>
+                        <li>Electronics (Sensors) 1</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="armor">
+            <h2>Armor</h2>
+            <p><a href="personal-armors.html">Index of Personal Armors</a></p>
+            <table>
+                <thead><tr><th>Armor Type</th><th>Protection</th><th>TL</th><th>RAD</th><th>KG</th><th>Cost</th><th>Required Skill</th></tr></thead>
+                <tbody><tr><td colspan="7" class="empty">No armor listed.</td></tr></tbody>
+            </table>
+        </section>
+
+        <section id="ranged-weapons">
+            <h2>Ranged Weapons</h2>
+            <table>
+                <thead><tr><th>Weapon</th><th>TL</th><th>Range</th><th>Damage</th><th>KG</th><th>Cost</th><th>Magazine</th><th>Mag Cost</th><th>Traits</th></tr></thead>
+                <tbody><tr><td colspan="9" class="empty">No ranged weapons listed.</td></tr></tbody>
+            </table>
+        </section>
+
+        <section id="melee-weapons">
+            <h2>Melee Weapons</h2>
+            <table>
+                <thead><tr><th>Weapon</th><th>TL</th><th>Range</th><th>Damage</th><th>KG</th><th>Cost</th><th>Traits</th></tr></thead>
+                <tbody><tr><td colspan="7" class="empty">No melee weapons listed.</td></tr></tbody>
+            </table>
+        </section>
+
+        <section id="gear">
+            <h2>Gear</h2>
+            <table>
+                <thead><tr><th>Item</th><th>TL</th><th>Effect</th><th>KG</th><th>Cost</th></tr></thead>
+                <tbody><tr><td colspan="5" class="empty">No gear listed.</td></tr></tbody>
+            </table>
+        </section>
+
+        <section id="background">
+            <h2>Background</h2>
+            <p>Ata Saxena is an ex-IISS Courier branch scout and expert astrogator attached to the wider <em>Amelia Grace</em> mission network. His strongest value to the team is navigation under difficult conditions, supported by scout-service contacts and Selenite zero-G aptitude.</p>
+        </section>
+
+        <section id="associations">
+            <h2>Associated NPCs</h2>
+            <ul>
+                <li>Emana Zulu — Lead engineer of the <em>Amelia Grace</em></li>
+                <li>Countess Minister MacKenzie Danisi — Custodian of the <em>Amelia Grace</em></li>
+                <li>Hazuren Omadim — Steward of the <em>Amelia Grace</em></li>
+                <li>Colonel Asemote Majali — Head of Security for Countess Danisi</li>
+                <li>Mart Badry — Second engineer of the <em>Amelia Grace</em></li>
+                <li>Dr. Adelita Dasel — Ship's Doctor of the <em>Amelia Grace</em></li>
+                <li>Mikhail Floros — Team Technician</li>
+                <li>????? — Team Data Specialist</li>
+                <li>Captain Naen Luug — Captain of the <em>Amelia Grace</em></li>
+                <li>Gahizi Cloutier — Pilot of the <em>Amelia Grace</em></li>
+            </ul>
+
+            <h2>Associated Starships</h2>
+            <ul>
+                <li><em>Amelia Grace</em> — 400 dton private yacht</li>
+            </ul>
+
+            <h2>Associated Factions</h2>
+            <ul>
+                <li>Imperial Ministry of State</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        Imperial Database Record // Compiled for campaign website use.
+    </footer>
+</div>
+</body>
+</html>
